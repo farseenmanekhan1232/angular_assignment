@@ -1,0 +1,48 @@
+.product {
+  margin: 20px;
+  background-color: lightgray;
+  padding: 15px;
+  height: 400px;
+  .product-details-container {
+    width: 22rem;
+    .product-details {
+      height: 120px;
+      .heading {
+        margin-bottom: 5px;
+        display: flex;
+        .name {
+          width: 200px;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+        .delete-btn {
+          margin-left: auto;
+        }
+      }
+      .price {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin-bottom: 5px;
+      }
+      .description {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  img {
+    width: 22rem;
+    height: 200px;
+    object-fit: cover;
+    transition: 300ms;
+    border-radius: 20px;
+    &:hover {
+      border-radius: 0;
+
+      position: absolute;
+      width: 22rem;
+      height: 280px;
+      margin-top: -40px;
+      //   margin-left: -20px;
+    }
+  }
+}

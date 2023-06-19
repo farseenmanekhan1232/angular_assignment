@@ -1,0 +1,25 @@
+<div class="add-product-form-section">
+  <form action="">
+    <input
+      type="text"
+      (change)="trackChange($event, 'title')"
+      placeholder="Product Title"
+    />
+    <input
+      type="text"
+      (change)="trackChange($event, 'price')"
+      placeholder="Product Price"
+    />
+    <textarea
+      type=""
+      placeholder="Product Description"
+      (change)="trackChange($event, 'description')"
+    ></textarea>
+    <input
+      type="text"
+      (change)="trackChange($event, 'thumbnail')"
+      placeholder="Thumbnail Link"
+    />
+    <button (click)="Done()">Done</button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+.add-product-btn-section {
+  button {
+    font-size: 1.1rem;
+    margin: 5px 20px;
+    border: 2px solid rgb(0, 171, 0);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: lightgreen;
+    &:hover {
+      background-color: rgb(193, 242, 193);
+      cursor: pointer;
+    }
+  }
+}
+
+.add-product-form-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.close-btn {
+  margin-left: auto;
+  button {
+    width: 10px;
+  }
+}
+
+.product-list-section {
+  display: flex;
+  flex-wrap: wrap;
+}

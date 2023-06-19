@@ -1,0 +1,16 @@
+<div class="product">
+  <div class="product-details-container">
+    <div class="product-details">
+      <div class="heading">
+        <div class="name">{{ Product.title }}</div>
+        <app-delete-product
+          class="delete-btn"
+          (delete)="deleteProd($event, Product.id)"
+        ></app-delete-product>
+      </div>
+      <div class="price">$ {{ Product.price }}</div>
+      <div class="description">{{ Product.description }}</div>
+    </div>
+    <img src="{{ Product.thumbnail }}" alt="" />
+  </div>
+</div>

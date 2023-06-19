@@ -1,0 +1,19 @@
+.delete-dialog {
+  justify-content: center;
+}
+
+.delete-btn {
+  height: 20px;
+}
+
+.btn {
+  width: 25px;
+  margin-left: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.delete-dialog {
+  display: flex;
+}

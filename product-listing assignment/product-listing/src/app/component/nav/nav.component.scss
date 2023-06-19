@@ -1,0 +1,20 @@
+.nav {
+  width: 100%;
+  background-color: aqua;
+  .nav-btns {
+    margin-left: 5rem;
+    a {
+      text-decoration: none;
+      color: black;
+      .btn {
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+}

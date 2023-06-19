@@ -1,0 +1,24 @@
+<app-nav></app-nav>
+<div class="add-product-btn-section" *ngIf="!showDialog; else elseBlock">
+  <button (click)="toggleAddDialog()">Add +</button>
+</div>
+<ng-template #elseBlock>
+  <div class="add-product-form-container">
+    <div>
+      <button class="close-btn" (click)="toggleAddDialog()">X</button>
+      <app-add-product
+        class="add-product-form"
+        (updatedId)="updateLastId($event)"
+        [currId]="currLength"
+        (done)="toggleAddDialog()"
+        (Product)="addNewProduct($event)"
+      ></app-add-product>
+    </div>
+  </div>
+</ng-template>
+
+<div class="product-list-section">
+  <div *ngFor="let product of productList">
+    <app-product [Product]="product" (prodId)="removeId($event)"></app-product>
+  </div>
+</div>

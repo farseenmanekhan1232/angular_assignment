@@ -1,0 +1,28 @@
+<div *ngIf="!v; else elseBlock">
+  <div class="delete-btn" (click)="toggle()">
+    <img
+      class="btn"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Delete-button.svg/862px-Delete-button.svg.png"
+      alt="delete"
+    />
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <div class="delete-dialog">
+    <div (click)="deleteProd()">
+      <img
+        class="btn"
+        src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/47298/check-mark-button-emoji-clipart-xl.png"
+        alt="yes"
+      />
+    </div>
+    <div (click)="toggle()">
+      <img
+        class="btn"
+        src="https://www.pngarts.com/files/12/Cancel-Button-Icon-PNG-Image.png"
+        alt="cancel"
+      />
+    </div>
+  </div>
+</ng-template>
